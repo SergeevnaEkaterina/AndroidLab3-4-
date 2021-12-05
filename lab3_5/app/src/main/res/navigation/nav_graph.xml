@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.spbstu.lab3_5.fragments.Fragment1"
+        android:label="Fragment1">
+        <action
+            android:id="@+id/from_first_to_second"
+            app:destination="@id/fragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.spbstu.lab3_5.fragments.Fragment2"
+        android:label="Fragment2">
+        <action
+            android:id="@+id/from_second_to_third"
+            app:destination="@id/fragment3" />
+        <action
+            android:id="@+id/from_second_to_first"
+            app:destination="@id/fragment1"
+            app:popUpTo="@id/fragment1"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.spbstu.lab3_5.fragments.Fragment3"
+        android:label="Fragment3">
+        <action
+            android:id="@+id/from_third_to_second"
+            app:destination="@id/fragment2"
+            app:popUpTo="@id/fragment2"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/from_third_to_first"
+            app:destination="@id/fragment1"
+            app:popUpTo="@id/fragment1"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/activityAbout"
+        android:name="com.spbstu.lab3_5.activities.ActivityAbout"
+        android:label="ActivityAbout" />
+    <action
+        android:id="@+id/to_activity_about"
+        app:destination="@id/activityAbout" />
+</navigation>

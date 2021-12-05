@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab3_5</string>
+    <string name="go_to_second">to second</string>
+    <string name="go_to_first">to first</string>
+    <string name="go_to_third">to third</string>
+    <string name="descr">Это крутое Android-приложение!</string>
+    <string name="activity_1">Activity First</string>
+    <string name="activity_2">Activity Second</string>
+    <string name="activity_3">Activity Third</string>
+    <string name="component_about">Activity About</string>
+</resources>

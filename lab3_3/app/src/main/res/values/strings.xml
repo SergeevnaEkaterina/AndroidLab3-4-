@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab3_3</string>
+    <string name="go_to_second">go to second</string>
+    <string name="go_to_first">go to first</string>
+    <string name="go_to_third">go to third</string>
+    <string name="descr">Description</string>
+    <string name="activity_1">Activity First</string>
+    <string name="activity_2">Activity Second</string>
+    <string name="activity_3">Activity Third</string>
+    <string name="about_component">Activity About</string>
+</resources>
